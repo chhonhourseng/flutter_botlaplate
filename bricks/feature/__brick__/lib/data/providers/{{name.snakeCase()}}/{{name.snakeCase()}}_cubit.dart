@@ -1,4 +1,4 @@
-import 'package:agora/export.dart';
+import 'package:app/export.dart';
 
 typedef {{name.pascalCase()}}State = BaseBlocState<{{name.pascalCase()}}Response>;
 

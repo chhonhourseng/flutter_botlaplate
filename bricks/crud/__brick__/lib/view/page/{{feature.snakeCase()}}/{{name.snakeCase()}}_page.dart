@@ -1,4 +1,4 @@
-import 'package:agora/export.dart';
+import 'package:app/export.dart';
 
 class {{name.pascalCase()}}Page extends StatefulWidget {
   static const String route = '/{{name.pascalCase()}}Page';

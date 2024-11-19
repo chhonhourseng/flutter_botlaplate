@@ -1,4 +1,4 @@
-import 'package:agora/export.dart';
+import 'package:app/export.dart';
 class {{name.pascalCase()}}Widget extends StatelessWidget {
   const {{name.pascalCase()}}Widget({super.key});
 

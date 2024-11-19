@@ -1,4 +1,4 @@
-import 'package:agora/export.dart';
+import 'package:app/export.dart';
 import 'package:annotations/annotations.dart';
 part '{{name.snakeCase()}}_response.g.dart';
 
