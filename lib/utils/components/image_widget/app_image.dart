@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '_index_.dart';
+import 'package:app/utils/components/image_widget/_index_.dart';
 
 class AppImage extends StatelessWidget {
   final String imageUrl;

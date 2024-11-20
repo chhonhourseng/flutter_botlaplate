@@ -11,6 +11,8 @@ analyzer:
   errors:
     todo: ignore
     duplicate_import: error
+    always_use_package_imports: error
+    avoid_relative_lib_imports: error
   exclude:
     - bricks/**
     - project_tool/**
@@ -46,5 +48,8 @@ linter:
     require_trailing_commas: false
     no_leading_underscores_for_local_identifiers: false
     prefer_final_fields: false
+    #always_use_package_imports: true
+    #prefer_relative_imports: true
+    #avoid_relative_lib_imports: true
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
