@@ -30,7 +30,7 @@ class _AboutPageState extends State<AboutPage> {
         Text(
             'Experience the future of online shopping with Agora - where every purchase tells a story. Join us on this journey of discovery, convenience, and endless possibilities.',
             style: context.textTheme.bodySmall),
-      ]).separated((c, i) => 20.sh()),
+      ].separator((i) => 20.sh())),
     );
   }
 }

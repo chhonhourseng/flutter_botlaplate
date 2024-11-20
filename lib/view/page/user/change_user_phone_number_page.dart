@@ -58,7 +58,7 @@ class _ChangeUserPhoneNumberPageState extends State<ChangeUserPhoneNumberPage> {
                   ),
                 ),
               ),
-            ]).separated((c, i) => 20.sh()),
+            ].separator((i) => 20.sh())),
           );
         },
       ),

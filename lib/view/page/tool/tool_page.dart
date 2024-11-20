@@ -59,7 +59,7 @@ class _ToolPageState extends State<ToolPage> {
             width: context.mediaQuery.size.width,
             child: FilledButton(onPressed: () => save(), child: const Text('Save')),
           ),
-        ]).separated((c, i) => 20.sh()),
+        ].separator((i) => 20.sh())),
       ),
     );
   }

@@ -73,7 +73,7 @@ class _UpdateUserInfoPageState extends State<UpdateUserInfoPage> {
                 validator: (v) => app.validation.isEmail(v),
                 label: T.email.r,
               ),
-            ]).separated((c, i) => 20.sh()),
+            ].separator((i) => 20.sh())),
           ),
           bottomNavigationBar: AppBottomWrapper(
             child: ButtonWrapper(

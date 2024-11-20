@@ -23,7 +23,7 @@ class _PrivacyPolicyPageState extends State<PrivacyPolicyPage> {
         children: [
           const Text('At Agora, safeguarding your privacy is paramount. We collect limited personal information for account creation and transaction purposes. Your data is used solely for enhancing your experience on our platform. We prioritize data security and do not share your information without your consent.'),
         ],
-      ).builder(),
+      ),
     );
   }
 }

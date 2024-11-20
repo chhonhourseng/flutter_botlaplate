@@ -24,8 +24,8 @@ class _BuyerNoticePageState extends State<BuyerNoticePage> {
           const Text(
             'Welcome to the Agora platform! We’re thrilled to have you here and are committed to providing you with a seamless and secure experience for all your buying needs. This notice is designed to inform you about important aspects of using the Agora app to ensure a smooth and enjoyable shopping journey.',
           ),
-        ],
-      ).separated((context, index) => 20.sh()),
+        ].separator((i) => 20.sh()),
+      ),
     );
   }
 }

@@ -22,7 +22,7 @@ class _UserAgreementPageState extends State<UserAgreementPage> {
         children: [
           const Text('By using Agora, you agree to our terms and conditions. This includes adhering to community guidelines, respecting intellectual property rights, and maintaining account security. Your compliance ensures a safe and positive experience for all users within the Agora community.'),
         ],
-      ).builder(),
+      ),
     );
   }
 }

@@ -159,7 +159,7 @@ abstract mixin class BasePaginateBlocBuilder<T> {
             padding: padding,
             controller: customController ?? cubit.scrollController,
             children: listWidget,
-          ).builder();
+          );
         }),
       ),
     );

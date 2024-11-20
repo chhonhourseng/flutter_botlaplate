@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(T.home.r),
       ),
       body: AppListViewBuilder(padding: app.screenPadding, children: [
-      ].separator((i) => 10.sh())).builder(),
+      ].separator((i) => 10.sh())),
     );
   }
 }

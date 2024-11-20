@@ -94,9 +94,9 @@ abstract mixin class BaseListBlocBuilder<T> {
           listWidget.add(SizedBox(height: MediaQuery.of(context).padding.bottom + 15));
           return AppListViewBuilder(
             padding: padding,
-            children: listWidget,
             physics: physics,
-          ).builder();
+            children: listWidget,
+          );
         }),
       ),
     );
