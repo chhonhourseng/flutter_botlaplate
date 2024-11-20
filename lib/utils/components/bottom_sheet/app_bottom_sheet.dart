@@ -178,42 +178,45 @@ class AppBottomSheet {
     return AppBottomSheet(
       isAutoHeight: true,
       isClose: false,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            margin: app.screenPaddingX,
-            child: Column(
-              children: [
-                Text(subTitle ?? T.areYouSure.r, style: context.textTheme.labelMedium),
-                5.sh(),
-                Text(title, style: context.textTheme.headlineMedium),
-              ],
+      child: Container(
+        margin: EdgeInsets.only(bottom: ContextHelper.bottom),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              margin: app.screenPaddingX,
+              child: Column(
+                children: [
+                  Text(subTitle ?? T.areYouSure.r, style: context.textTheme.labelMedium),
+                  5.sh(),
+                  Text(title, style: context.textTheme.headlineMedium),
+                ],
+              ),
             ),
-          ),
-          if (body != null) body,
-          1.sh(),
-          Container(
-            margin: app.screenPaddingX,
-            child: Row(
-              children: [
-                Expanded(
-                  child: OutlinedButton(onPressed: () => context.navigate.pop().then((_) => onNo?.call()), child: Text(customNoText ?? T.no.r)),
-                ),
-                10.sw(),
-                Expanded(
-                  child: FilledButton(
-                      style: FilledButton.styleFrom(
-                        backgroundColor: customYesBackgroundColor,
-                      ),
-                      onPressed: () => context.navigate.pop().then((_) => onYes?.call()),
-                      child: Text(customYesText ?? T.yes.r)),
-                ),
-              ],
+            if (body != null) body,
+            1.sh(),
+            Container(
+              margin: app.screenPaddingX,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: OutlinedButton(onPressed: () => context.navigate.pop().then((_) => onNo?.call()), child: Text(customNoText ?? T.no.r)),
+                  ),
+                  10.sw(),
+                  Expanded(
+                    child: FilledButton(
+                        style: FilledButton.styleFrom(
+                          backgroundColor: customYesBackgroundColor,
+                        ),
+                        onPressed: () => context.navigate.pop().then((_) => onYes?.call()),
+                        child: Text(customYesText ?? T.yes.r)),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ].separator((i) => 10.sh()),
+          ].separator((i) => 10.sh()),
+        ),
       ),
     ).show(context);
   }

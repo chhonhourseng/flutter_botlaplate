@@ -18,7 +18,7 @@ class AppBottomWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double keyBordBottom = MediaQuery.of(context).viewInsets.bottom;
-    final double padding = Platform.isIOS ? (ContextHelper.padding.bottom * 0.8) : (ContextHelper.padding.bottom + 10);
+    final double padding = ContextHelper.bottom;
     final double bottom = (keyBordBottom > 0 ? keyBordBottom + 10 : padding + keyBordBottom);
     return Container(
       width: context.mediaQuery.size.width,

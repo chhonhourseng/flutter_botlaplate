@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:app/export.dart';
 
 class ContextHelper {
@@ -23,4 +25,7 @@ class ContextHelper {
   static EdgeInsets get padding => _padding;
 
   static Size get size => _size;
+
+  static double bottom = Platform.isIOS ? (ContextHelper.padding.bottom * 0.8) : (ContextHelper.padding.bottom + 10);
+
 }
