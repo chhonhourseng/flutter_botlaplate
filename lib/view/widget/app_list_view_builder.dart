@@ -9,7 +9,6 @@ class AppListViewBuilder extends StatelessWidget {
     this.shrinkWrap,
     this.physics,
     this.padding,
-    this.oneKey,
   });
 
   final ScrollController? controller;
@@ -18,14 +17,12 @@ class AppListViewBuilder extends StatelessWidget {
   final bool? shrinkWrap;
   final EdgeInsets? padding;
   final ScrollPhysics? physics;
-  final Key? oneKey;
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       padding: padding ?? EdgeInsets.zero,
       cacheExtent: 100,
-      key: oneKey,
       physics: physics ?? app.scrollPhysics,
       itemCount: children.length,
       controller: controller,
