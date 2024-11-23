@@ -11,6 +11,8 @@ class AppAssets {
   static const englishImage = 'assets/images/english.png';
 
   // Svgs
+  static const logoutSvg = 'assets/svgs/logout.svg';
   static const backArrowSvg = 'assets/svgs/back_arrow.svg';
   static const addSvg = 'assets/svgs/add.svg';
+  static const imageIconSvg = 'assets/svgs/image_icon.svg';
 }
