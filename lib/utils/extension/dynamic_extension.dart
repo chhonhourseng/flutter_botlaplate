@@ -1,3 +1,5 @@
+import 'package:numeral/numeral.dart';
+import 'package:intl/intl.dart';
 
 extension DynamicExtension on dynamic {
   String toFirstUppercase() {
@@ -65,6 +67,27 @@ extension DynamicExtension on dynamic {
     try {
       int num = toString().toAppString()!.toAppInt();
       return Numeral(num).format(fractionDigits: 1);
+    } catch (_) {
+      return toString().toAppString()!;
+    }
+  }
+
+  String toAppNumber() {
+    try {
+      double num = toString().toAppString()!.toAppDouble();
+      late NumberFormat formatter;
+      if ((num % 1) == 0) {
+        formatter = NumberFormat.decimalPatternDigits(
+          locale: 'en_us',
+          decimalDigits: 0,
+        );
+      } else {
+        formatter = NumberFormat.decimalPatternDigits(
+          locale: 'en_us',
+          decimalDigits: 2,
+        );
+      }
+      return formatter.format(num);
     } catch (_) {
       return toString().toAppString()!;
     }
